@@ -44,9 +44,10 @@ body{
 
 
 .canvas-container{
+    display: grid;
+    background-color: white;
     width: 1400px;
     height: 600px;
-    background-color: white;
     border: none;
     border-radius: 5px;
 }

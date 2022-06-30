@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
 
-    
+
 </head>
 <body>
 
@@ -30,17 +30,15 @@
         <button class="randomclrs">Multicolor</button>
         <button class="picker">Color palette <input type="color" id="colorpicker"></button>
         <button class="erase">Eraser</button>
-        <button class="reset">Reset</button>
+        <button class="reset" onclick="resetSketch()">Reset</button>
     </div>
 
     <div class="canvas-squares">
         <button>Set a size</button>
-        <input type="text" id="size">
+        <input type="text" id="size" onchange="setSize(this.value)">
     </div>
 
 </div>
-
-
 
 </body>
 
