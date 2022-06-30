@@ -1,0 +1,147 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.content-container{
+    background: linear-gradient(to left, rgb(204, 0, 255), rgb(117, 25, 223), rgb(200, 170, 235));
+    animation: movingBg 10s ease infinite;
+    background-size: 350%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 2.3rem;
+}
+
+.content-container h1{
+    margin: 0;
+    font-family: 'Questrial', sans-serif;
+    color: white;
+    letter-spacing: 2px;
+}
+
+@keyframes movingBg{
+    0%{
+        background-position: 0% 0%;
+    }
+    25%{
+        background-position: 0% 25%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    70%{
+        background-position: 50% 70%;
+    }
+    100%{
+        background-position: 0% 0%;
+    }
+}
+
+
+.canvas-container{
+    width: 1400px;
+    height: 600px;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+.canvas-container:hover{
+    cursor: url(assets/paint-brush.png), auto;
+}
+
+button{
+    border: none;
+}
+
+.buttons-container{
+    display: flex;
+    width: 1400px;
+    justify-content: space-evenly;
+}
+
+.buttons-container button{
+    padding: 0 3rem;
+    font-size: 1.4rem;
+    font-family: 'Questrial', sans-serif;
+    border-radius: 10px;
+    height: 50px;
+    cursor: pointer;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.black:hover{
+    background-color: black;
+    color: white;
+    transition: 0.2s cubic-bezier(0, 0, 0.64, -0.3);
+}
+
+.randomclrs:hover{
+    background: linear-gradient(0.63turn, rgb(234, 0, 255), orange, darkcyan, brown);
+    color: rgb(255, 255, 255);
+    transition: 0.2s cubic-bezier(0, 0, 0.64, -0.05 );
+}
+
+.picker:hover{
+    background: linear-gradient(0.32turn, rgb(234, 0, 255), rgb(0, 89, 255), darkcyan, brown);
+    color: rgb(255, 255, 255);
+    transition: 0.2s cubic-bezier(0, 0, 0.64, -0.1);
+}
+
+.picker input{
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    background-color: black;
+}
+
+.erase:hover{
+    background-color: black;
+    color: white;
+    transition: 0.2s cubic-bezier(0, 0, 0.64, -0.3);
+}
+
+.reset:hover{
+    background-color: rgb(117, 25, 223);
+    color: rgb(255, 255, 255);
+    transition: 0.2s cubic-bezier(0, 0, 0.64, -0.1);
+}
+
+.canvas-squares{
+    display: flex;
+    width: 500px;
+    align-items: center;
+    column-gap: 2.5rem;
+    margin-left: 12rem;
+}
+
+.canvas-squares button{
+    font-size: 1.4rem;
+    font-family: 'Questrial', sans-serif;
+    height: 50px;
+    width: 195px;
+    cursor: pointer;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+.canvas-squares button:hover{
+    background-color: tomato;
+    color: white;
+    transition: 0.2s cubic-bezier(0, 0, 0.64, -0.1);
+}
+
+.canvas-squares input{
+    height: 40px;
+    width: 100px;
+    border-radius: 10px;
+    font-size: 1.4rem;
+    font-family: 'Questrial', sans-serif;
+    font-weight: 600;
+}
