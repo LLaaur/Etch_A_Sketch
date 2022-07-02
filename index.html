@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,34 +15,36 @@
 
 
 </head>
+
 <body>
 
-<div class="content-container">
+    <div class="content-container">
 
-    <h1>YOUR CANVAS</h1>
+        <h1>YOUR CANVAS</h1>
 
-    <div class="canvas-container">
+        <div class="canvas-container">
+            <div></div>
+        </div>
+
+
+        <div class="buttons-container">
+            <button class="black" onclick="switchColors('black')">Black</button>
+            <button class="randomclrs" onclick="switchColors('random')">Multicolor</button>
+            <button class="picker">Color palette <input type="color" id="colorpicker" onchange="switchColors(value)"></button>
+            <button class="erase" onclick="switchColors('white')">Eraser</button>
+            <button class="reset" onclick="resetSketch()">Reset</button>
+        </div>
+
+        <div class="canvas-squares">
+            <button>Set a size</button>
+            <input type="text" id="size" value="16" onchange="checkSize(this.value)">
+        </div>
+        <div class="warning-message">Size must be between 2 and 100!</div>
 
     </div>
-
-
-    <div class="buttons-container">
-        <button class="black">Black</button>
-        <button class="randomclrs">Multicolor</button>
-        <button class="picker">Color palette <input type="color" id="colorpicker"></button>
-        <button class="erase">Eraser</button>
-        <button class="reset" onclick="resetSketch()">Reset</button>
-    </div>
-
-    <div class="canvas-squares">
-        <button>Set a size</button>
-        <input type="text" id="size" onchange="setSize(this.value)">
-    </div>
-
-</div>
 
 </body>
 
-    <script src="script.js"></script>
+<script src="script.js"></script>
 
 </html>

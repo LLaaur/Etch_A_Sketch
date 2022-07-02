@@ -116,10 +116,9 @@ button{
 
 .canvas-squares{
     display: flex;
-    width: 500px;
     align-items: center;
     column-gap: 2.5rem;
-    margin-left: 12rem;
+    letter-spacing: 1px;
 }
 
 .canvas-squares button{
@@ -145,4 +144,12 @@ button{
     font-size: 1.4rem;
     font-family: 'Questrial', sans-serif;
     font-weight: 600;
+}
+
+.warning-message{
+    font-family: 'Questrial', sans-serif;
+    font-weight: 600;
+    color: white;
+    letter-spacing: 1.3px;
+    font-size: 1.5rem;
 }
