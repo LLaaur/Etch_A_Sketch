@@ -121,29 +121,23 @@ button{
     letter-spacing: 1px;
 }
 
-.canvas-squares button{
+.canvas-squares h1{
     font-size: 1.4rem;
     font-family: 'Questrial', sans-serif;
-    height: 50px;
-    width: 195px;
-    cursor: pointer;
     font-weight: 600;
-    border-radius: 10px;
-}
-
-.canvas-squares button:hover{
-    background-color: tomato;
     color: white;
-    transition: 0.2s cubic-bezier(0, 0, 0.64, -0.1);
 }
 
-.canvas-squares input{
-    height: 40px;
-    width: 100px;
+input[type="range" i]{
+    -webkit-appearance: none;
+    background-color: #db339b;
     border-radius: 10px;
-    font-size: 1.4rem;
+}
+
+.canvas-squares output{
+    color: rgb(0, 0, 0);
+    font-size: 1.3rem;
     font-family: 'Questrial', sans-serif;
-    font-weight: 600;
 }
 
 .warning-message{

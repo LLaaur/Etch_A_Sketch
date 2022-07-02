@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -36,8 +35,9 @@
         </div>
 
         <div class="canvas-squares">
-            <button>Set a size</button>
-            <input type="text" id="size" value="16" onchange="checkSize(this.value)">
+            <h1>Set a size</h1>
+            <input type="range" id="size" min='2' max='100' value="16" onclick="checkSize(this.value)" oninput="this.nextElementSibling.value = this.value">
+            <output>16</output>
         </div>
         <div class="warning-message">Size must be between 2 and 100!</div>
 

@@ -55,10 +55,9 @@ warnMsg.style.visibility = 'hidden';
 // FUNCTION TO CHECK THE SIZE INPUT
 const checkSize = function (userInput) {
     if (userInput >= 2 && userInput < 101) {
-        warnMsg.style.visibility = 'hidden';
         setSize(userInput);
     }
-    else {
-        warnMsg.style.visibility = 'visible';
+    else{
+        warnMsg.style.visibility = 'visible'
     }
-}
+};
