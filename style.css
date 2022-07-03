@@ -52,21 +52,14 @@ body{
     border-radius: 5px;
 }
 
+/* switching the cursor to a brush photo when hovering on the canvas */
+
 .canvas-container:hover{
     cursor: url(assets/paint-brush.png), auto;
 }
 
 button{
     border: none;
-}
-
-.buttons-container{
-    display: flex;
-    width: 1400px;
-    justify-content: space-evenly;
-}
-
-.buttons-container button{
     padding: 0 3rem;
     font-size: 1.4rem;
     font-family: 'Questrial', sans-serif;
@@ -75,6 +68,12 @@ button{
     cursor: pointer;
     font-weight: 600;
     letter-spacing: 1px;
+}
+
+.buttons-container{
+    display: flex;
+    width: 1400px;
+    justify-content: space-evenly;
 }
 
 .black:hover{

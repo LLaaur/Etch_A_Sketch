@@ -1,7 +1,6 @@
 let color = 'black';
 let click = true;
 
-const colorPicker = document.getElementById('colorpicker');
 
 const paintSquare = function () {
     if (click) {
@@ -25,16 +24,20 @@ const switchColors = function (choice) {
 
 const setSize = function (size) {
 
+    // declaring variables to select the canvas container and all the divs inside it
     let sketchPad = document.querySelector('.canvas-container');
     let sketchPadSquares = sketchPad.querySelectorAll('div');
 
+    // removing each div and creating new ones so the background color of the div always remains white when changing the grid size
     sketchPadSquares.forEach((div) => div.remove());
 
+    // creating rows and columns
     sketchPad.style.gridTemplateColumns = `repeat(${size}, 1fr)`;
     sketchPad.style.gridTemplateRows = `repeat(${size}, 1fr)`;
 
     let total = size * size;
 
+    // loop that creates new divs based on the user input
     for (let i = 0; i < total; i++) {
         let square = document.createElement('div');
         square.addEventListener('mouseover', paintSquare);
@@ -60,14 +63,10 @@ const checkSize = function (userInput) {
     if (userInput >= 2 && userInput < 101) {
         setSize(userInput);
     }
-    else{
-        warnMsg.style.visibility = 'visible'
-    }
 };
 
+
 // ENABLE\DISABLE DRAWING ON CLICK
-
-
 const drawMode = document.querySelector('.mode h1');
 
 document.querySelector('body').addEventListener('click', (e) => {
