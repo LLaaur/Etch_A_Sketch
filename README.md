@@ -11,3 +11,6 @@ II. Strengthened my knowledge of DOM elements (including creating and removing e
 III. Using CSS grid for positioning elements.
 
 IV. Working with event objects (e).
+
+
+👉 <a href="https://llaaur.github.io/Etch_A_Sketch/"> Live demo </a>
